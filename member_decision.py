@@ -94,10 +94,10 @@ def send_mail(encoded_file, to_mail, mail_content, icsfilename):
 
 
 if __name__ == '__main__':
-    load_dotenv(verbose=True)
-    dotenv_path = './.env'
-    load_dotenv(dotenv_path)
-    print(os.environ['EXAMPLE'])
+    # load_dotenv(verbose=True)
+    # dotenv_path = './.env'
+    # load_dotenv(dotenv_path)
+    # print(os.environ['EXAMPLE'])
     path_input = "./example/GSS_test - 202111 予定表.csv"  # Type path of schedule table csv file downloaded from spreadsheet unless direct_in=True.
     dir_output = "./example"  # Type path of output file(.ical, 予定表.csv).
     main(path_input=None, dir_output=None, direct_in=True, local=False)
